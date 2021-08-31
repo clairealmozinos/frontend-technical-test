@@ -9,9 +9,8 @@ const UsersList = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(Actions.users.onUsersFetch)
+    dispatch(Actions.users.onUsersFetch())
   }, [dispatch])
-
 
   return (
     <div>
