@@ -1,8 +1,12 @@
+import { User } from 'types/user'
 import * as Actions from '../actions'
+import { RegisteredAction } from '../actions/index.types'
+
+type State = User[]
 
 const users = (
-  state = [],
-  action
+  state: State = [],
+  action: RegisteredAction
 ) => {
   switch (action.type) {
     case Actions.users.ON_USERS_FETCH_SUCCESS: {
@@ -13,4 +17,5 @@ const users = (
   }
 }
 
+export type { State as UsersState }
 export { users }

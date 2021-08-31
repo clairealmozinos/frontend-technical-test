@@ -5,3 +5,7 @@ export interface Conversation {
   senderId: number
   senderNickname: string
 }
+
+export interface ConversationById {
+  readonly [id: string]: Conversation
+}

@@ -2,9 +2,10 @@ import { FC, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Link from 'next/link'
 import * as Actions from 'store/actions/index'
+import { State } from 'src/store/reducers/index.types'
 
 const UsersList = () => {
-  const users = useSelector((state) => state.users)
+  const users = useSelector((state: State) => state.users)
   const dispatch = useDispatch()
 
   useEffect(() => {

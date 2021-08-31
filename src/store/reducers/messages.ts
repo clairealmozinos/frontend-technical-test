@@ -1,8 +1,12 @@
+import { Message } from 'types/message'
 import * as Actions from '../actions'
+import { RegisteredAction } from '../actions/index.types'
+
+type State = Message[]
 
 const messages = (
-  state = [],
-  action
+  state: State = [],
+  action: RegisteredAction
 ) => {
   switch (action.type) {
     case Actions.messages.ON_MESSAGES_FETCH_SUCCESS: {
@@ -13,4 +17,5 @@ const messages = (
   }
 }
 
+export type { State as MessagesState }
 export { messages }
