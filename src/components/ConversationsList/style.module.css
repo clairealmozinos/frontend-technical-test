@@ -1,0 +1,47 @@
+.wrapper {
+  width: 500px;
+}
+
+.profileImageWrapper {
+  height: 40px;
+  width: 40px;
+}
+
+.profileImage {
+  border-radius: 100%;
+}
+
+.conversation {
+  border: 1px solid #e1e1e4;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.conversation:hover {
+  border-color: #ff6e14;
+  color: #ff6e14;
+}
+
+.infos {
+  margin-left: 2rem;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.date {
+  color: #a2a2a7;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+}

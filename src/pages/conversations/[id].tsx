@@ -1,10 +1,8 @@
 import ConversationsList from 'components/ConversationsList'
 
-const Conversations = ({ id }) => {
-  return (
-    <ConversationsList id={id} />
-  )
-}
+const Conversations = ({ id }) => (
+  <ConversationsList id={id} />
+)
 
 export const getStaticProps = async ({ params }) => {
   return {
@@ -15,7 +13,6 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
-
   return {
       paths: [],
       fallback: 'blocking'
