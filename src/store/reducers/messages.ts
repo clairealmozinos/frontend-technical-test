@@ -12,6 +12,12 @@ const messages = (
     case Actions.messages.ON_MESSAGES_FETCH_SUCCESS: {
       return action.payload.messages
     }
+    case Actions.messages.ON_NEW_MESSAGE: {
+      return [
+        ...state,
+        action.payload.message
+      ]
+    }
     default:
       return state
   }
