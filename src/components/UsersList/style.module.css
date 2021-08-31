@@ -1,0 +1,53 @@
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: row;
+}
+
+.userBlock {
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+  flex-grow: 1;
+  font-weight: 500;
+  padding: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.userBlock:last-child {
+  margin-right: 0;
+}
+
+.userBlock:hover {
+  border-color: #ff6e14;
+  color: #ff6e14;
+}
+
+.profileImageWrapper {
+  height: 40px;
+  margin: 0 auto 1rem;
+  width: 40px;
+}
+
+.profileImage {
+  border-radius: 100%;
+}
+
+@media (max-width: 767px) {
+  .usersList {
+    flex-direction: column;
+  }
+
+  .userBlock {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
