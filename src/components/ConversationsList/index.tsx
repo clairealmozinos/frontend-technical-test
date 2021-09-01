@@ -3,18 +3,26 @@ import { useDispatch, useSelector } from 'react-redux'
 import dayjs from 'dayjs'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import * as Actions from 'src/store/actions/index'
 import { State } from 'src/store/reducers/index.types'
 import styles from './style.module.css'
 import { Props } from './types'
 
 const ConversationsList: FC<Props> = ({ id }) => {
-  const conversations = useSelector((state: State) => Object.values(state.conversations))
+  const router = useRouter()
   const dispatch = useDispatch()
 
+  const currentUserId = useSelector((state: State) => state.users.currentUser)
+  const conversations = useSelector((state: State) => Object.values(state.conversations))
+
   useEffect(() => {
+    if (currentUserId === null) {
+      router.replace('/')
+    }
+
     dispatch(Actions.conversations.onConversationsFetch(id))
-  }, [dispatch, id])
+  }, [currentUserId, dispatch, id, router])
 
   return (
     <div className={styles.wrapper}>

@@ -12,7 +12,7 @@ import styles from './style.module.css'
 const MessagesList: FC<Props> = ({ id }) => {
   const dispatch = useDispatch()
   const router = useRouter()
-  
+
   const currentUserId = useSelector((state: State) => state.users.currentUser)
   const usersList = useSelector((state: State) => state.users.list)
   const currentConversation = useSelector((state: State) => state.conversations[id])
