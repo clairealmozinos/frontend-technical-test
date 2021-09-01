@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux'
-import { ConversationById } from 'types/conversation'
+import { ConversationById } from 'src/types/conversation'
 import { Action } from './index.types'
 
 export interface ConversationsSuccessActionPayload {
@@ -11,4 +11,4 @@ export interface ConversationsSuccessAction
 
 export type OnConversationsSuccess = (conversations: ConversationById) => ConversationsSuccessAction
 
-export type OnConversationsFetch = (id: string) => (dispatch: Dispatch) => Promise<void>
+export type OnConversationsFetch = (id: number) => (dispatch: Dispatch) => Promise<void>

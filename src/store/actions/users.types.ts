@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux'
-import { User } from 'types/user'
+import { User } from 'src/types/user'
 import { Action } from './index.types'
 
 export interface UsersSuccessActionPayload {

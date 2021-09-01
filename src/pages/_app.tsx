@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'  
 import { Provider } from 'react-redux'
-import { useStore } from 'store/index'
-import { getLoggedUserId } from 'utils/getLoggedUserId'
+import { useStore } from 'src/store/index'
+import { getLoggedUserId } from 'src/utils/getLoggedUserId'
 import 'styles/globals.css'
 import styles from './__app.style.module.css'
 

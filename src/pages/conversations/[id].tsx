@@ -1,4 +1,4 @@
-import ConversationsList from 'components/ConversationsList'
+import ConversationsList from 'src/components/ConversationsList'
 
 const Conversations = ({ id }) => (
   <ConversationsList id={id} />

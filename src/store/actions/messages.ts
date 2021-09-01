@@ -1,4 +1,4 @@
-import { Message } from 'types/message'
+import { Message } from 'src/types/message'
 import { OnMessagesFetch, OnMessagesSuccess, OnNewMessage, OnNewMessageSubmit } from './messages.types'
 
 const ON_MESSAGES_FETCH_SUCCESS = 'ON_MESSAGES_FETCH_SUCCESS'

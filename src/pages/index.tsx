@@ -1,7 +1,6 @@
 import { FC, Fragment } from 'react'
 import Head from 'next/head'
-import UsersList from 'components/UsersList'
-import styles from 'styles/Home.module.css'
+import UsersList from 'src/components/UsersList'
 
 const Home: FC = () => (
   <Fragment>

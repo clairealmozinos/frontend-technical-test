@@ -1,4 +1,4 @@
-import { User } from 'types/user'
+import { User } from 'src/types/user'
 import * as Actions from '../actions'
 import { RegisteredAction } from '../actions/index.types'
 

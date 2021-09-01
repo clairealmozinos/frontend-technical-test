@@ -1,4 +1,4 @@
-import MessagesList from 'components/MessagesList'
+import MessagesList from 'src/components/MessagesList'
 
 const Messages = ({ id }) => {
   return (

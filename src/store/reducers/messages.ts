@@ -1,4 +1,4 @@
-import { Message } from 'types/message'
+import { Message } from 'src/types/message'
 import * as Actions from '../actions'
 import { RegisteredAction } from '../actions/index.types'
 

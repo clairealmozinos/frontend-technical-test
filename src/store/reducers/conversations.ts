@@ -1,4 +1,4 @@
-import { ConversationById } from 'types/conversation'
+import { ConversationById } from 'src/types/conversation'
 import * as Actions from '../actions'
 import { RegisteredAction } from '../actions/index.types'
 
