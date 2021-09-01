@@ -1,7 +1,12 @@
 import ConversationsList from 'src/components/ConversationsList'
+import styles from '../style.module.css'
 
 const Conversations = ({ id }) => (
-  <ConversationsList id={id} />
+  <div className={styles.container}>
+    <main className={styles.main}>
+      <ConversationsList id={id} />
+    </main>
+  </div>
 )
 
 export const getStaticProps = async ({ params }) => {

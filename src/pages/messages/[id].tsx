@@ -1,10 +1,13 @@
 import MessagesList from 'src/components/MessagesList'
+import styles from './style.module.css'
 
-const Messages = ({ id }) => {
-  return (
-    <MessagesList id={id} />
-  )
-}
+const Messages = ({ id }) => (
+  <div className={styles.container}>
+    <main className={styles.main}>
+      <MessagesList id={id} />
+    </main>
+  </div>
+)
 
 export const getStaticProps = async ({ params }) => {
   return {

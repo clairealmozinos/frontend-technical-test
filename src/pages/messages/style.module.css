@@ -1,0 +1,28 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  max-width: 1220px;
+  padding: 0 2rem;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 4rem 1rem;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+
+  .main {
+    padding: 0;
+  }
+}
