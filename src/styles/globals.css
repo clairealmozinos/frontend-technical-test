@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --message-page-header-height: 85px;
+  --message-page-button-height: 31px;
+  --message-page-padding-message-list: 1rem;
+}

@@ -1,0 +1,84 @@
+.wrapper {
+  border: 1px solid #e1e1e4;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  box-shadow: #22222b14 0px 3px 11px 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.recipientname {
+  font-weight: 500;
+  padding-left: 1.5rem;
+}
+
+.profileImageWrapper {
+  height: 40px;
+  width: 40px;
+}
+
+.profileImage {
+  border-radius: 100%;
+}
+
+.form {
+  border-top: 1px solid #e1e1e4;
+  bottom: 0;
+  box-shadow: #22222b14 0px -3px 11px 0px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.input {
+  border: 0;
+  padding: .5rem 1rem;
+  outline: none;
+  width: calc(100% - 100px);
+}
+
+.button {
+  background-color: #ff6e14;
+  border-bottom-left-radius: 25px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  width: 100px;
+}
+
+.messagesList {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - var(--message-page-header-height) - var(--message-page-button-height) - var(--message-page-padding-message-list));
+  overflow-y: scroll;
+  padding: var(--message-page-padding-message-list);
+}
+
+.message {
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  max-width: 50%;
+  padding: .5rem 1rem;
+}
+
+.recipient {
+  align-self: flex-start;
+  background-color: #ff6e14;
+  color: white;
+  text-align: left;
+}
+
+.current {
+  align-self: flex-end;
+  background-color: #f4f4f2;
+  text-align: right;
+}
